@@ -148,3 +148,32 @@ def recursion_two_lists(list1,list2)
 
 
 end
+
+def remove_duplicate(head)
+
+    if head == nil
+        return head
+    end
+
+    next_node = head.next
+    current = head
+
+    while next_node != nil
+        if current.val == next_node.val
+            current.next = next_node.next
+            next_node = current.next
+
+        else 
+            current = current.next
+            next_node = next_node.next
+
+        end
+
+    
+
+    end
+
+    return head
+
+
+end
