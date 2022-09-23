@@ -55,7 +55,6 @@ tree.root.left.left = Node(4)
 tree.root.left.right = Node(5)
 tree.root.right.left = Node(6)
 tree.root.right.right = Node(7)
-tree.root.left.left.left = Node(8)
 
 
 tree.print_tree("postorder")
